@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu des breuvages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Menu des breuvages</h1>
+    </header>
+
+    <main>
+        <div id="drink-list-container">
+            <h2>Breuvage désiré</h2>
+            <ul id="drinks-ul">
+                </ul>
+        </div>
+
+        <div class="order-section">
+            <h2>Votre commande</h2>
+            <p>Sélectionnez le breuvage désiré.</p>
+            <button id="order-button" disabled>commander</button>
+            <p id="order-status"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Fête de Léa 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
