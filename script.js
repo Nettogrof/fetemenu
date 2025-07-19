@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Load Drinks from CSV ---
     async function loadDrinks() {
         try {
-            const response = await fetch('drinks.csv');
+            const response = await fetch('drink.csv');
             const csvText = await response.text();
             const drinks = parseCSV(csvText);
             displayDrinks(drinks);
